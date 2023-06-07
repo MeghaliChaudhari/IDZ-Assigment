@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="userDetails.css">
+    <script type="text/javascript">
+        function callvalue(){
+           var name = document.getElementById("uname").value;
+           var date = document.getElementById("dob").value;
+           var email = document.getElementById("email").value;
+           document.writeln("<h1>Registration Succesful</h1>"+ "<br>")
+           document.writeln("<div>Your Details are Submitted Sucessfully<div>")
+           document.writeln("Name : "+name+ "<br>");
+           document.writeln("Date Of Birth : "+date+ "<br>");
+           document.writeln("Email Id : "+email+ "<br>");
+        }
+    </script>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form detail">
+            <div class="form-content">
+                <h1>Welcome User</h1>
+                <div id="head">
+                    Please enter your details.
+                </div>
+                <form onsubmit="callvalue()" action="#">
+                    <div class="field input-field">
+                        <h3>Name</h3>
+                        <input type="text" placeholder="Enter Your Name" id="uname">
+                    </div>
+                    <div class="field input-field">
+                        <h3>Birth Date</h3>
+                        <input type="date" placeholder="dateOfBirth" id="dob">
+                    </div>
+                    <div class="field input-field">
+                        <h3>Email Id</h3>
+                        <input type="email" placeholder="Enter Your Email Id" id="email">
+                    </div>
+                    <div class="field button-field">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

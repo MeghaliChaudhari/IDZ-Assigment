@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+h1{
+    font-weight: 600;
+}
+#head{
+    color: grey;
+    margin-top: 10px;
+}
+form{
+    margin-top: 30px;
+}
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 50px;
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 20px;
+    border: 1px solid #cacaca;
+    border-radius: 6px;
+}
+#submit{
+    color: #fff;
+    background-color: red;
+}
